@@ -1,6 +1,6 @@
 import abc
 
-class Text_Similarity(abc.ABC):
+class TextSimilarity(abc.ABC):
 
 	# This class defines the common behavior that the sub-classes in the family of Semantic Similarity algorithms can implement/inherit
 
@@ -95,7 +95,7 @@ class Text_Similarity(abc.ABC):
 
 inputFiles = ['thisDir/file1.txt','thatDir/file2.txt','./file1.txt']
 
-myModel =   Text_Similarity()# instatiate the class
+myModel =   TextSimilarity()# instatiate the class
 
 train_data_list = myModel.read_dataset(inputFiles,'train')  # read in a dataset for training
 
