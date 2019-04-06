@@ -1,6 +1,6 @@
 import abc
 
-class DITK_SemanticSimilarity(abc.ABC):
+class Text_Similarity(abc.ABC):
 
 	# This class defines the common behavior that the sub-classes in the family of Semantic Similarity algorithms can implement/inherit
 
@@ -95,7 +95,7 @@ class DITK_SemanticSimilarity(abc.ABC):
 
 inputFiles = ['thisDir/file1.txt','thatDir/file2.txt','./file1.txt']
 
-myModel =   DITKModel_SemanticSimilarity()# instatiate the class
+myModel =   Text_Similarity()# instatiate the class
 
 train_data_list = myModel.read_dataset(inputFiles,'train')  # read in a dataset for training
 
