@@ -49,11 +49,11 @@ class DITKModel_SemanticSimilarity(abc.ABC):
 		return training_data_list
 
 	@abc.abstractmethod 	
-	def train(self,data_X,data_Y, *args, **kwargs):  #<--- implemented PER class
+	def train(self,*args, **kwargs):  #<--- implemented PER class
 	
 	    # some individuals don't need training so when the method is extended, it can be passed
 		
-        pass
+        	pass
 
 	@abc.abstractmethod
 	def predict(self, data_X, data_Y, *args, **kwargs):  
