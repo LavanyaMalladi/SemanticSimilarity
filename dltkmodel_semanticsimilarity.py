@@ -17,17 +17,17 @@ class DITKModel_SemanticSimilarity(abc.ABC):
         | SICK Dataset         | Sentences and its similarity score |['Dogs are fighting','Dogs are wrestling',4]| Pearson Correlation             |
         |                                                                                                               Coefficient                |
         --------------------------------------------------------------------------------------------------------------------------------------------
-    """
+    	"""
 
-    """
+    	"""
 
-	GENERAL FUNCTIONAL FLOW :
+    GENERAL FUNCTIONAL FLOW :
 
 	Read dataset --> Train Model(if required) --> Predict Similarity Values --> Evaluate Pearson Correlation Coefficient -->
 	--> Display Evaluation Score
 
 
-    """
+    	"""
 
 	@abc.abstractmethod
 	def read_dataset(self, fileNames, *args, **kwargs): 
