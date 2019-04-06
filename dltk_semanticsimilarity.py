@@ -1,6 +1,6 @@
 import abc
 
-class DITKModel_SemanticSimilarity(abc.ABC):
+class DITK_SemanticSimilarity(abc.ABC):
 
 	# This class defines the common behavior that the sub-classes in the family of Semantic Similarity algorithms can implement/inherit
 
