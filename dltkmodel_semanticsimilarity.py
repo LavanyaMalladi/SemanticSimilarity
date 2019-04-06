@@ -29,7 +29,7 @@ class DITKModel_SemanticSimilarity(abc.ABC):
 
     	"""
 
-	@abc.abstractmethod
+	@classmethod
 	def read_dataset(self, fileNames, *args, **kwargs): 
 		"""
 		Reads a dataset that is a CSV/Excel File.
@@ -72,7 +72,7 @@ class DITKModel_SemanticSimilarity(abc.ABC):
 		"""
 		return prediction_score
 
-	@abc.abstractmethod
+	@classmethod
 	def evaluate(self, actual_values, predicted_values, *args, **kwargs): 
 		"""
 		Returns the correlation score(0-1) between the actual and predicted similarity scores
