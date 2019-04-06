@@ -73,23 +73,4 @@ class DITKModel_SemanticSimilarity(abc.ABC):
         evaluation_score = r
         return evaluation_score
 
-"""
-# Sample workflow:
-
-inputFiles = ['thisDir/file1.txt','thatDir/file2.txt','./file1.txt']
-
-myModel = myClass(DITKModel_NER)  # instatiate the class
-
-train_X, train_Y = myModel.read_dataset(inputFiles,'train')  # read in a dataset for training
-test_X, test_Y = myModel.read_dataset(inputFiles,'test')  # read in a dataset for testing
-
-myModel.train(train_X,train_Y)  # trains the model and stores model state in object properties or similar
-
-predictions = myModel.predict(test_X)  # generate predictions! output format will be same for everyone
-
-P,R,F1 = myModel.evaluate(predictions, test_Y)  # calculate Precision, Recall, F1
-
-print('Precision: %s, Recall: %s, F1: %s'%(P,R,F1))
-
-"""
 
