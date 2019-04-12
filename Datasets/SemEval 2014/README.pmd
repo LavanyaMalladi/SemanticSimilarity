@@ -1,0 +1,23 @@
+SemEval 2014 - The format and structure of the files are different 
+
+4 input files - sentence 1 <tab> sentence 2 :
+
+STS.input.deft-news.txt
+STS.input.headlines.txt
+STS.input.OnWN.txt
+STS.input.tweet-news.txt
+
+4 gold standard output files- score(1-5) corresponding to each row of input files :
+
+STS.gs.deft-news.txt
+STS.gs.headlines.txt
+STS.gs.OnWN.txt
+STS.gs.tweet-news.txt
+
+Each input file has between 300-800 records so they can be either combined and split into train - dev - test 
+or used separately for train - dev - test
+
+We need to combine the files to the following format - Sentence 1, sentence 2 , score
+
+If someone is willing to do that and put up 3 files (sts-train.txt, sts-dev.txt, sts-test.txt)
+like the other sets, it would be helpful and we can have a standard dataset to train and test.
